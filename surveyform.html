@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hibiscus Fit Survey Form</title>
+   <link rel="stylesheet" href="surveystyle.css">
+</head>
+<body>
+<h1>Hibiscus Fit Survey Form</h1>
+
+<p id="description">Please fill the following it will only take a few minutes</p>
+
+<form class="survey-form">
+  <label for="name" id="name-label">Name
+    <input name="name" id="name" type="text" placeholder="Enter your full name" required/>
+  </label>
+
+  <label for="email" id="email-label">Email
+    <input name="email" id="email" type="email" placeholder="Enter your email" required/>
+  </label>
+
+ <label for="age" id="number-label">Age
+   <input name="age" id="age" type="number" min="18" max="65" placeholder="Your age"/>
+   </label>
+
+   <label for="dropdown">
+     What level are you in fashion?
+     <select name="dropdown" id="dropdown">
+       <option value="">select level</option>
+       <option value="1">Beginner</option>
+       <option value="2">Intermediate</option>
+       <option value="3">Advance</option>
+     </select>
+     </label>
+     
+     <legend>Would you like to upgrade your skill in fashion now?</legend>
+     <label for="yes">
+       <input id="yes" class="inline" type="radio"name="upgrade"/>
+       Yes
+  </label>
+     
+
+     <label for="no">
+       <input id="no" class="inline" type="radio" name="upgrade"/>
+       No
+     </label>
+     
+     <label for="notinterested">
+       <input id="notinterested" class="inline" type="radio" name="upgrade"/>
+       Not interested
+       
+     </label>
+
+ <legend>What fashion technique(s) would you like to upgrade(check all you want)</legend>
+ <label for="sewing">
+   <input id="sewing" class="inline" type="checkbox" value="sew" name="sewing"/>Sewing
+ </label>
+
+  <label for="embroidery">
+     <input id="embroidery" class="inline" type="checkbox" value="embroid" name="embroidery"/>Embroidery
+     </label>
+
+  <label for="Embellishment">
+       <input id="embellishment" type="checkbox" value="embellish" class="inline" name="embellishment"/>Embellishment
+       </label>
+
+  <label for="patterndrafting">
+         <input id="patterndrafting" type="checkbox" value="drafting" class="inline" name="patterndrafting"/>Pattern Drafting
+         </label> 
+
+  <label for="sketching">
+    <input id="sketching" type="checkbox" value="sketch" class="inline" name="sketching"/>Sketching
+  </label>
+
+  <label for="knitting">
+    <input id="knitting" class="inline" type="checkbox" value="knit" name="knitting"/>Knitting and Kneading
+  </label>
+
+  <label for="service">Briefly describe how would like to upgrade your skills
+    <textarea name="service" id="service" rows="5" cols="30"></textarea>
+    </label>
+
+    <input type="submit" value="Submit"
+  
+</form>
+</body>
+</html>
